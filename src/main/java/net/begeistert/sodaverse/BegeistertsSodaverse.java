@@ -1,5 +1,7 @@
 package net.begeistert.sodaverse;
 
+import net.begeistert.sodaverse.block.ModBlocks;
+import net.begeistert.sodaverse.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -15,6 +17,9 @@ public class BegeistertsSodaverse implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Initializing Begeisterts Sodaverse 0.0.1-1.20.1-07042025");
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		LOGGER.info("Finished Initializing Begeisterts Sodaverse!");
 	}
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "begeistertssodaverse:block/block_of_abhorrent_sodaium"
+  }
+}
