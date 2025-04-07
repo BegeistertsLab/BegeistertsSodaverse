@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "begeistertssodaverse",
+	"version": "${version}",
+	"name": "BegeistertsSodaverse",
+	"description": "Sodalicious!",
+	"authors": [
+		"Begeistert"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/begeistertssodaverse/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.begeistert.sodaverse.BegeistertsSodaverse"
+		],
+		"fabric-datagen": [
+			"net.begeistert.sodaverse.BegeistertsSodaverseDataGenerator"
+		],
+		"client": [
+			"net.begeistert.sodaverse.BegeistertsSodaverseClient"
+		]
+	},
+	"mixins": [
+		"begeistertssodaverse.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.20",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
