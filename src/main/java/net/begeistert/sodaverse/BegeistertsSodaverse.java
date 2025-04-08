@@ -1,6 +1,7 @@
 package net.begeistert.sodaverse;
 
 import net.begeistert.sodaverse.block.ModBlocks;
+import net.begeistert.sodaverse.item.ModItemGroup;
 import net.begeistert.sodaverse.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -18,6 +19,8 @@ public class BegeistertsSodaverse implements ModInitializer {
 	public void onInitialize() {
 
 		LOGGER.info("Initializing Begeisterts Sodaverse 0.0.1-1.20.1-07042025");
+		ModItemGroup.registerItemGroups();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		LOGGER.info("Finished Initializing Begeisterts Sodaverse!");
